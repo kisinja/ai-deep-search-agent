@@ -1,0 +1,25 @@
+[project]
+name = "ai-search-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kisinja", email = "kisinjaelvis@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.7",
+    "langchain-ollama>=1.1.0",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.18",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+ai-search-agent = "ai_search_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
